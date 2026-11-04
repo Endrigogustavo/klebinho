@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: klebinho
+
+viacep:
+  url: https://viacep.com.br
+
+brasilapi:
+  url: https://brasilapi.com.br
+
+resilience4j:
+  retry:
+    instances:
+      viacep:
+        max-attempts: 3
+        wait-duration: 500ms
